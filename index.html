@@ -1,1 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<title>English Courses</title>
+
+<style>
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+line-height: 1.6;
+color: #333;
+background: #f9fafb;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+background: linear-gradient(135deg, #2563eb, #06b6d4);
+color: white;
+text-align: center;
+padding: 100px 20px;
+}
+
+.hero h1 {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 18px;
+margin-bottom: 30px;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* CTA Button */
+
+.btn {
+display: inline-block;
+background: white;
+color: #2563eb;
+padding: 14px 32px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #e5e7eb;
+transform: translateY(-2px);
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+padding: 80px 20px;
+text-align: center;
+max-width: 900px;
+margin: auto;
+}
+
+.about h2 {
+font-size: 32px;
+margin-bottom: 20px;
+color: #2563eb;
+}
+
+.about p {
+font-size: 16px;
+color: #555;
+}
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features {
+background: white;
+padding: 80px 20px;
+}
+
+.features h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 50px;
+color: #2563eb;
+}
+
+/* Feature Grid */
+
+.feature-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+max-width: 1100px;
+margin: auto;
+}
+
+/* Feature Card */
+
+.feature {
+background: #f3f4f6;
+padding: 30px;
+border-radius: 16px;
+text-align: center;
+transition: 0.3s;
+}
+
+/* Hover effect */
+
+.feature:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.feature h3 {
+margin-bottom: 15px;
+color: #2563eb;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+padding: 80px 20px;
+text-align: center;
+background: linear-gradient(135deg, #06b6d4, #2563eb);
+color: white;
+}
+
+.contact h2 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+
+.contact p {
+margin-bottom: 25px;
+}
+
+/* Contact Button */
+
+.contact .btn {
+background: white;
+color: #2563eb;
+}
+
+.contact .btn:hover {
+background: #e5e7eb;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+background: #111827;
+color: white;
+text-align: center;
+padding: 30px 20px;
+font-size: 14px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width: 768px) {
+
+.hero h1 {
+font-size: 32px;
+}
+
+.feature-grid {
+grid-template-columns: 1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero">
+
+<h1>Learn English with Confidence</h1>
+
+<p>
+Professional English lessons designed to help you speak fluently,
+improve grammar, and build real-life communication skills.
+</p>
+
+<!-- Call To Action Button -->
+
+<a href="#contact" class="btn">
+Start Learning Today
+</a>
+
+</section>
+
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
+<section class="about">
+
+<h2>About Our English Courses</h2>
+
+<p>
+Our English courses are designed for students of all levels —
+from beginners to advanced learners. We focus on speaking,
+listening, grammar, and vocabulary using modern teaching
+methods that make learning enjoyable and effective.
+</p>
+
+</section>
+
+<!-- =========================
+     FEATURES SECTION
+========================= -->
+
+<section class="features">
+
+<h2>Why Choose Our Courses</h2>
+
+<div class="feature-grid">
+
+<!-- Feature 1 -->
+
+<div class="feature">
+
+<h3>Experienced Teacher</h3>
+
+<p>
+Learn from a qualified and experienced English teacher
+with proven teaching methods.
+</p>
+
+</div>
+
+<!-- Feature 2 -->
+
+<div class="feature">
+
+<h3>Interactive Lessons</h3>
+
+<p>
+Fun and engaging lessons that help you practice speaking
+and improve your confidence.
+</p>
+
+</div>
+
+<!-- Feature 3 -->
+
+<div class="feature">
+
+<h3>Flexible Schedule</h3>
+
+<p>
+Choose lesson times that fit your daily routine
+and learning pace.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section id="contact" class="contact">
+
+<h2>Start Your English Journey Today</h2>
+
+<p>
+Contact us now to book your first lesson
+and improve your English skills.
+</p>
+
+<a href="mailto:your@email.com" class="btn">
+Contact Us
+</a>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+<p>
+© 2026 English Courses | All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+
+</html>
