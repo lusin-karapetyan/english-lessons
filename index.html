@@ -1,201 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hy">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Լուսինե Կարապետյան | Անգլերենի դասեր</title>
 
-<title>English Courses</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================
-   GLOBAL STYLES
-========================= */
+/* ===== GLOBAL ===== */
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
 }
 
-body {
-line-height: 1.6;
-color: #333;
-background: #f9fafb;
+body{
+background:#f8fafc;
+color:#333;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* ===== HEADER ===== */
 
-.hero {
-background: linear-gradient(135deg, #2563eb, #06b6d4);
-color: white;
-text-align: center;
-padding: 100px 20px;
+header{
+
+background:white;
+padding:15px 40px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
+position:sticky;
+top:0;
+z-index:999;
+
 }
 
-.hero h1 {
-font-size: 48px;
-margin-bottom: 20px;
+.logo{
+
+font-size:22px;
+font-weight:600;
+color:#1e293b;
+
 }
 
-.hero p {
-font-size: 18px;
-margin-bottom: 30px;
-max-width: 600px;
-margin-left: auto;
-margin-right: auto;
+nav a{
+
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+
+transition:0.3s;
+
 }
 
-/* CTA Button */
+nav a:hover{
 
-.btn {
-display: inline-block;
-background: white;
-color: #2563eb;
-padding: 14px 32px;
-border-radius: 30px;
-text-decoration: none;
-font-weight: 600;
-transition: 0.3s;
+color:#2563eb;
+
 }
 
-.btn:hover {
-background: #e5e7eb;
-transform: translateY(-2px);
+/* ===== HERO ===== */
+
+.hero{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:80px 40px;
+
+background:linear-gradient(135deg,#eef2ff,#e0f2fe);
+
+flex-wrap:wrap;
+
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
+.hero-text{
 
-.about {
-padding: 80px 20px;
-text-align: center;
-max-width: 900px;
-margin: auto;
+flex:1;
+
 }
 
-.about h2 {
-font-size: 32px;
-margin-bottom: 20px;
-color: #2563eb;
+.hero h1{
+
+font-size:42px;
+margin-bottom:15px;
+
+color:#1e293b;
+
 }
 
-.about p {
-font-size: 16px;
-color: #555;
+.hero p{
+
+font-size:18px;
+margin-bottom:25px;
+
 }
 
-/* =========================
-   FEATURES SECTION
-========================= */
+.btn{
 
-.features {
-background: white;
-padding: 80px 20px;
+display:inline-block;
+
+padding:14px 30px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:600;
+
+margin:5px;
+
+transition:0.3s;
+
 }
 
-.features h2 {
-text-align: center;
-font-size: 32px;
-margin-bottom: 50px;
-color: #2563eb;
+.btn-primary{
+background:#2563eb;
+color:white;
 }
 
-/* Feature Grid */
-
-.feature-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 30px;
-max-width: 1100px;
-margin: auto;
+.btn-primary:hover{
+background:#1d4ed8;
 }
 
-/* Feature Card */
-
-.feature {
-background: #f3f4f6;
-padding: 30px;
-border-radius: 16px;
-text-align: center;
-transition: 0.3s;
+.btn-green{
+background:#22c55e;
+color:white;
 }
 
-/* Hover effect */
-
-.feature:hover {
-transform: translateY(-8px);
-box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+.btn-blue{
+background:#0ea5e9;
+color:white;
 }
 
-.feature h3 {
-margin-bottom: 15px;
-color: #2563eb;
+.hero img{
+
+width:380px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
 }
 
-/* =========================
-   CONTACT SECTION
-========================= */
+/* ===== SECTIONS ===== */
 
-.contact {
-padding: 80px 20px;
-text-align: center;
-background: linear-gradient(135deg, #06b6d4, #2563eb);
-color: white;
+.section{
+
+padding:80px 20px;
+text-align:center;
+
 }
 
-.contact h2 {
-font-size: 32px;
-margin-bottom: 20px;
+.section h2{
+
+font-size:32px;
+margin-bottom:20px;
+color:#2563eb;
+
 }
 
-.contact p {
-margin-bottom: 25px;
+.section p{
+
+max-width:900px;
+margin:auto;
+
 }
 
-/* Contact Button */
+/* ===== GRID ===== */
 
-.contact .btn {
-background: white;
-color: #2563eb;
+.grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+
+max-width:1100px;
+margin:40px auto;
+
 }
 
-.contact .btn:hover {
-background: #e5e7eb;
+.card{
+
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 5px 15px rgba(0,0,0,0.06);
+transition:0.3s;
+
 }
 
-/* =========================
-   FOOTER
-========================= */
-
-.footer {
-background: #111827;
-color: white;
-text-align: center;
-padding: 30px 20px;
-font-size: 14px;
+.card:hover{
+transform:translateY(-8px);
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/* ===== REVIEWS ===== */
 
-@media(max-width: 768px) {
-
-.hero h1 {
-font-size: 32px;
+.review{
+background:#f1f5f9;
 }
 
-.feature-grid {
-grid-template-columns: 1fr;
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:linear-gradient(135deg,#06b6d4,#2563eb);
+color:white;
+
+}
+
+input, textarea{
+
+width:100%;
+padding:12px;
+margin:8px 0;
+
+border:none;
+border-radius:8px;
+
+}
+
+form{
+
+max-width:500px;
+margin:auto;
+
+}
+
+/* ===== MAP ===== */
+
+.map iframe{
+
+width:100%;
+height:300px;
+border:0;
+
+}
+
+/* ===== FLOATING BUTTONS ===== */
+
+.float-btn{
+
+position:fixed;
+right:20px;
+padding:14px 18px;
+
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-size:14px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+.whatsapp{
+
+bottom:80px;
+background:#25D366;
+
+}
+
+.telegram{
+
+bottom:20px;
+background:#0088cc;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:#0f172a;
+color:white;
+padding:20px;
+text-align:center;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.hero img{
+
+width:280px;
+margin-top:30px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
 }
 
 }
@@ -206,125 +320,225 @@ grid-template-columns: 1fr;
 
 <body>
 
-<!-- =========================
-     HERO SECTION
-========================= -->
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+
+Լուսինե Կարապետյան
+
+</div>
+
+<nav>
+
+<a href="#">Գլխավոր</a>
+<a href="#">Իմ մասին</a>
+<a href="#">Դասեր</a>
+<a href="#">Կարծիքներ</a>
+<a href="#">Կապ</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
 
 <section class="hero">
 
-<h1>Learn English with Confidence</h1>
+<div class="hero-text">
+
+<h1>
+
+Սովորիր անգլերեն վստահ և ազատ
+
+</h1>
 
 <p>
-Professional English lessons designed to help you speak fluently,
-improve grammar, and build real-life communication skills.
+
+Online և Offline դասեր Վեդի քաղաքում  
+Դպրոցականների և մեծահասակների համար
+
 </p>
 
-<!-- Call To Action Button -->
+<a href="https://wa.me/37477157747"
+class="btn btn-green">
 
-<a href="#contact" class="btn">
-Start Learning Today
+WhatsApp
+
 </a>
 
-</section>
+<a href="https://t.me/+37477157747"
+class="btn btn-blue">
 
-<!-- =========================
-     ABOUT SECTION
-========================= -->
+Telegram
 
-<section class="about">
-
-<h2>About Our English Courses</h2>
-
-<p>
-Our English courses are designed for students of all levels —
-from beginners to advanced learners. We focus on speaking,
-listening, grammar, and vocabulary using modern teaching
-methods that make learning enjoyable and effective.
-</p>
-
-</section>
-
-<!-- =========================
-     FEATURES SECTION
-========================= -->
-
-<section class="features">
-
-<h2>Why Choose Our Courses</h2>
-
-<div class="feature-grid">
-
-<!-- Feature 1 -->
-
-<div class="feature">
-
-<h3>Experienced Teacher</h3>
-
-<p>
-Learn from a qualified and experienced English teacher
-with proven teaching methods.
-</p>
-
-</div>
-
-<!-- Feature 2 -->
-
-<div class="feature">
-
-<h3>Interactive Lessons</h3>
-
-<p>
-Fun and engaging lessons that help you practice speaking
-and improve your confidence.
-</p>
-
-</div>
-
-<!-- Feature 3 -->
-
-<div class="feature">
-
-<h3>Flexible Schedule</h3>
-
-<p>
-Choose lesson times that fit your daily routine
-and learning pace.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =========================
-     CONTACT SECTION
-========================= -->
-
-<section id="contact" class="contact">
-
-<h2>Start Your English Journey Today</h2>
-
-<p>
-Contact us now to book your first lesson
-and improve your English skills.
-</p>
-
-<a href="mailto:your@email.com" class="btn">
-Contact Us
 </a>
 
+</div>
+
+<img src="YOUR_IMAGE_LINK_HERE">
+
 </section>
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- ABOUT -->
 
-<footer class="footer">
+<section class="section">
+
+<h2>Իմ մասին</h2>
 
 <p>
-© 2026 English Courses | All Rights Reserved
+
+Ես Լուսինե Կարապետյանն եմ՝ անգլերենի մասնագետ։  
+Ավարտել եմ Երևանի Վ․ Բրյուսովի անվան պետական լեզվաբանական համալսարանը։  
+
+Դասեր Online և Offline Վեդի քաղաքում։
+
 </p>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="section">
+
+<h2>Ինչու ընտրել իմ դասերը</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Անհատական մոտեցում</h3>
+
+<p>Յուրաքանչյուր ուսանողի համար անհատական ծրագիր։</p>
+
+</div>
+
+<div class="card">
+
+<h3>Ժամանակակից մեթոդներ</h3>
+
+<p>Նորագույն ուսուցման մեթոդներ։</p>
+
+</div>
+
+<div class="card">
+
+<h3>Արդյունավետ դասեր</h3>
+
+<p>Արագ առաջընթաց և խոսակցական զարգացում։</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="section review">
+
+<h2>Ուսանողների կարծիքներ</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<p>
+
+⭐⭐⭐⭐⭐  
+Շատ լավ և հասկանալի դասեր։
+
+</p>
+
+</div>
+
+<div class="card">
+
+<p>
+
+⭐⭐⭐⭐⭐  
+Արագ սովորեցի խոսել անգլերեն։
+
+</p>
+
+</div>
+
+<div class="card">
+
+<p>
+
+⭐⭐⭐⭐⭐  
+Շատ գոհ եմ արդյունքից։
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GOOGLE MAP -->
+
+<section class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=Vedi%20Armenia&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact">
+
+<h2>Գրանցվեք դասերին</h2>
+
+<form>
+
+<input type="text"
+placeholder="Ձեր անունը">
+
+<input type="text"
+placeholder="Հեռախոս">
+
+<textarea
+placeholder="Հաղորդագրություն">
+</textarea>
+
+<button class="btn btn-primary">
+
+Ուղարկել
+
+</button>
+
+</form>
+
+</section>
+
+<!-- FLOATING BUTTONS -->
+
+<a href="https://wa.me/37477157747"
+class="float-btn whatsapp">
+
+WhatsApp
+
+</a>
+
+<a href="https://t.me/+37477157747"
+class="float-btn telegram">
+
+Telegram
+
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Լուսինե Կարապետյան  
+Անգլերենի դասեր
 
 </footer>
 
