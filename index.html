@@ -1,239 +1,555 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hy">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grand Opening</title>
+
+<title>English Courses | Learn English</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter', sans-serif;
 }
 
-body {
-    line-height: 1.6;
-    color: #333;
+body{
+background:#f9fafb;
+color:#1f2937;
+line-height:1.6;
 }
 
-/* HERO SECTION */
+/* Container */
 
-.hero {
-    background: linear-gradient(135deg, #0f766e, #14b8a6);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+.container{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
+/* =========================
+   HEADER
+========================= */
+
+header{
+
+background:white;
+padding:18px 0;
+
+position:sticky;
+top:0;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
+.logo{
+
+font-size:22px;
+font-weight:700;
+color:#2563eb;
+
 }
 
-.btn {
-    display: inline-block;
-    background: white;
-    color: #0f766e;
-    padding: 14px 28px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+.nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
 }
 
-.btn:hover {
-    background: #f1f1f1;
+/* Navigation Links */
+
+.nav-links a{
+
+margin-left:25px;
+text-decoration:none;
+color:#374151;
+font-weight:500;
+
+transition:0.3s;
+
 }
 
-/* FEATURES */
+.nav-links a:hover{
 
-.features {
-    padding: 60px 20px;
-    background: #f9f9f9;
+color:#2563eb;
+
 }
 
-.features h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 32px;
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+
+padding:100px 0;
+
+background:
+linear-gradient(135deg,#e0f2fe,#f0f9ff);
+
+text-align:center;
+
 }
 
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
+.hero h1{
+
+font-size:44px;
+margin-bottom:15px;
+
 }
 
-.feature {
-    background: white;
-    padding: 30px;
-    border-radius: 14px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+.hero p{
+
+font-size:18px;
+margin-bottom:30px;
+
+color:#4b5563;
+
 }
 
-.feature h3 {
-    margin-bottom: 10px;
+/* CTA BUTTON */
+
+.btn{
+
+display:inline-block;
+
+background:#2563eb;
+color:white;
+
+padding:14px 32px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:0.3s;
+
 }
 
-/* ABOUT */
+.btn:hover{
 
-.about {
-    padding: 60px 20px;
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
+background:#1d4ed8;
+transform:translateY(-2px);
+
 }
 
-.about h2 {
-    margin-bottom: 20px;
-    font-size: 32px;
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about{
+
+padding:80px 0;
+
+text-align:center;
+
 }
 
-/* CTA */
+.about h2{
 
-.cta {
-    background: #0f766e;
-    color: white;
-    text-align: center;
-    padding: 70px 20px;
+font-size:32px;
+margin-bottom:20px;
+
+color:#2563eb;
+
 }
 
-.cta h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
+.about p{
+
+max-width:750px;
+margin:auto;
+
+color:#4b5563;
+
 }
 
-/* FOOTER */
+/* =========================
+   FEATURES SECTION
+========================= */
 
-.footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 14px;
+.features{
+
+padding:80px 0;
+
+background:white;
+
 }
 
-/* MOBILE RESPONSIVE */
+.features h2{
 
-@media(max-width: 768px) {
+text-align:center;
 
-.hero h1 {
-    font-size: 30px;
+font-size:32px;
+margin-bottom:50px;
+
+color:#2563eb;
+
 }
 
-.feature-grid {
-    grid-template-columns: 1fr;
+/* Grid */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+/* Feature Card */
+
+.card{
+
+background:#f9fafb;
+
+padding:30px;
+
+border-radius:16px;
+
+text-align:center;
+
+transition:0.3s;
+
+}
+
+/* Hover Effect */
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+.card h3{
+
+margin-bottom:10px;
+
+color:#2563eb;
+
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact{
+
+padding:80px 0;
+
+text-align:center;
+
+background:
+linear-gradient(135deg,#2563eb,#06b6d4);
+
+color:white;
+
+}
+
+.contact h2{
+
+font-size:32px;
+margin-bottom:15px;
+
+}
+
+.contact p{
+
+margin-bottom:25px;
+
+}
+
+/* Contact Buttons */
+
+.contact .btn{
+
+background:white;
+color:#2563eb;
+
+}
+
+.contact .btn:hover{
+
+background:#e5e7eb;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+background:#111827;
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+font-size:14px;
+
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.nav-links{
+
+display:none;
+
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- HERO -->
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="container nav">
+
+<div class="logo">
+
+English Courses
+
+</div>
+
+<div class="nav-links">
+
+<a href="#">Գլխավոր</a>
+<a href="#">Իմ մասին</a>
+<a href="#">Դասեր</a>
+<a href="#">Կապ</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- =========================
+     HERO SECTION
+========================= -->
 
 <section class="hero">
 
-<h1>🎉 Grand Opening 🎉</h1>
+<div class="container">
+
+<h1>
+
+Learn English with Confidence
+
+</h1>
 
 <p>
-Discover our newest collection with exclusive opening discounts.
-Modern style, quality products, and unbeatable prices.
+
+Professional English lessons designed for students,
+schoolchildren, and adults.
+
+Online and Offline courses available.
+
 </p>
 
-<a href="#" class="btn">
-Shop Now
+<!-- Call To Action -->
+
+<a href="#contact" class="btn">
+
+Start Learning Today
+
 </a>
 
-</section>
-
-<!-- FEATURES -->
-
-<section class="features">
-
-<h2>Why Choose Us</h2>
-
-<div class="feature-grid">
-
-<div class="feature">
-<h3>High Quality</h3>
-<p>
-Carefully selected products designed for durability and style.
-</p>
-</div>
-
-<div class="feature">
-<h3>Fast Delivery</h3>
-<p>
-Quick and reliable shipping to get your items on time.
-</p>
-</div>
-
-<div class="feature">
-<h3>Best Prices</h3>
-<p>
-Affordable pricing with regular discounts and offers.
-</p>
-</div>
-
 </div>
 
 </section>
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT SECTION
+========================= -->
 
 <section class="about">
 
-<h2>About Our Store</h2>
+<div class="container">
+
+<h2>
+
+About Our English Courses
+
+</h2>
 
 <p>
-We bring modern design and everyday comfort together. 
-Our mission is to provide stylish, high-quality products 
-that fit your lifestyle and budget.
+
+Our English lessons are designed for learners of all levels —
+from beginners to advanced students.  
+We focus on speaking, grammar, vocabulary,
+and real-life communication skills
+to help you speak English confidently.
+
 </p>
+
+</div>
 
 </section>
 
-<!-- CTA -->
+<!-- =========================
+     FEATURES SECTION
+========================= -->
 
-<section class="cta">
+<section class="features">
 
-<h2>Start Shopping Today</h2>
+<div class="container">
+
+<h2>
+
+Why Choose Our Courses
+
+</h2>
+
+<div class="grid">
+
+<!-- Feature 1 -->
+
+<div class="card">
+
+<h3>
+
+Experienced Teacher
+
+</h3>
 
 <p>
-Don't miss our special opening discounts!
+
+Learn from a qualified English teacher
+with modern teaching methods.
+
 </p>
 
-<br>
+</div>
 
-<a href="#" class="btn">
-Visit Store
+<!-- Feature 2 -->
+
+<div class="card">
+
+<h3>
+
+Interactive Lessons
+
+</h3>
+
+<p>
+
+Fun and engaging lessons
+that improve speaking skills.
+
+</p>
+
+</div>
+
+<!-- Feature 3 -->
+
+<div class="card">
+
+<h3>
+
+Flexible Schedule
+
+</h3>
+
+<p>
+
+Choose lesson times
+that fit your daily routine.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<h2>
+
+Start Your English Journey Today
+
+</h2>
+
+<p>
+
+Contact us now to book your first lesson.
+
+📱 WhatsApp / Telegram: +374 77 157747
+
+</p>
+
+<a href="https://wa.me/37477157747" class="btn">
+
+Contact via WhatsApp
+
 </a>
 
+</div>
+
 </section>
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
-<footer class="footer">
+<footer>
 
-<p>
-© 2026 Your Store Name | All Rights Reserved
-</p>
+© 2026 English Courses  
+All Rights Reserved
 
 </footer>
 
 </body>
+
 </html>
