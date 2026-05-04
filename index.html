@@ -1,555 +1,242 @@
 <!DOCTYPE html>
 <html lang="hy">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>English Courses | Learn English</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-/* =========================
-   GLOBAL STYLES
-========================= */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter', sans-serif;
-}
-
-body{
-background:#f9fafb;
-color:#1f2937;
-line-height:1.6;
-}
-
-/* Container */
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:0 20px;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header{
-
-background:white;
-padding:18px 0;
-
-position:sticky;
-top:0;
-
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-
-}
-
-.logo{
-
-font-size:22px;
-font-weight:700;
-color:#2563eb;
-
-}
-
-.nav{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-}
-
-/* Navigation Links */
-
-.nav-links a{
-
-margin-left:25px;
-text-decoration:none;
-color:#374151;
-font-weight:500;
-
-transition:0.3s;
-
-}
-
-.nav-links a:hover{
-
-color:#2563eb;
-
-}
-
-/* =========================
-   HERO SECTION
-========================= */
-
-.hero{
-
-padding:100px 0;
-
-background:
-linear-gradient(135deg,#e0f2fe,#f0f9ff);
-
-text-align:center;
-
-}
-
-.hero h1{
-
-font-size:44px;
-margin-bottom:15px;
-
-}
-
-.hero p{
-
-font-size:18px;
-margin-bottom:30px;
-
-color:#4b5563;
-
-}
-
-/* CTA BUTTON */
-
-.btn{
-
-display:inline-block;
-
-background:#2563eb;
-color:white;
-
-padding:14px 32px;
-
-border-radius:30px;
-
-text-decoration:none;
-
-font-weight:600;
-
-transition:0.3s;
-
-}
-
-.btn:hover{
-
-background:#1d4ed8;
-transform:translateY(-2px);
-
-}
-
-/* =========================
-   ABOUT SECTION
-========================= */
-
-.about{
-
-padding:80px 0;
-
-text-align:center;
-
-}
-
-.about h2{
-
-font-size:32px;
-margin-bottom:20px;
-
-color:#2563eb;
-
-}
-
-.about p{
-
-max-width:750px;
-margin:auto;
-
-color:#4b5563;
-
-}
-
-/* =========================
-   FEATURES SECTION
-========================= */
-
-.features{
-
-padding:80px 0;
-
-background:white;
-
-}
-
-.features h2{
-
-text-align:center;
-
-font-size:32px;
-margin-bottom:50px;
-
-color:#2563eb;
-
-}
-
-/* Grid */
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-}
-
-/* Feature Card */
-
-.card{
-
-background:#f9fafb;
-
-padding:30px;
-
-border-radius:16px;
-
-text-align:center;
-
-transition:0.3s;
-
-}
-
-/* Hover Effect */
-
-.card:hover{
-
-transform:translateY(-8px);
-
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
-
-}
-
-.card h3{
-
-margin-bottom:10px;
-
-color:#2563eb;
-
-}
-
-/* =========================
-   CONTACT SECTION
-========================= */
-
-.contact{
-
-padding:80px 0;
-
-text-align:center;
-
-background:
-linear-gradient(135deg,#2563eb,#06b6d4);
-
-color:white;
-
-}
-
-.contact h2{
-
-font-size:32px;
-margin-bottom:15px;
-
-}
-
-.contact p{
-
-margin-bottom:25px;
-
-}
-
-/* Contact Buttons */
-
-.contact .btn{
-
-background:white;
-color:#2563eb;
-
-}
-
-.contact .btn:hover{
-
-background:#e5e7eb;
-
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-
-background:#111827;
-color:white;
-
-text-align:center;
-
-padding:25px;
-
-font-size:14px;
-
-}
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:30px;
-}
-
-.grid{
-
-grid-template-columns:1fr;
-
-}
-
-.nav-links{
-
-display:none;
-
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Անգլերենի Դասընթացներ</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: #f5f7fb;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVBAR */
+        header {
+            background: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #4a6cf7;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 100px 10%;
+            text-align: center;
+            background: linear-gradient(135deg, #4a6cf7, #6c8cff);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: white;
+            color: #4a6cf7;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #e6e9ff;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        /* COURSES */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* STEPS */
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .step {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
+<!-- NAVBAR -->
 <header>
-
-<div class="container nav">
-
-<div class="logo">
-
-English Courses
-
-</div>
-
-<div class="nav-links">
-
-<a href="#">Գլխավոր</a>
-<a href="#">Իմ մասին</a>
-<a href="#">Դասեր</a>
-<a href="#">Կապ</a>
-
-</div>
-
-</div>
-
+    <h3>English Academy</h3>
+    <nav>
+        <a href="#home">Գլխավոր</a>
+        <a href="#courses">Դասընթացներ</a>
+        <a href="#how">Ինչպես գրանցվել</a>
+        <a href="#about">Մեր մասին</a>
+        <a href="#contact">Կապ</a>
+    </nav>
 </header>
 
-<!-- =========================
-     HERO SECTION
-========================= -->
-
-<section class="hero">
-
-<div class="container">
-
-<h1>
-
-Learn English with Confidence
-
-</h1>
-
-<p>
-
-Professional English lessons designed for students,
-schoolchildren, and adults.
-
-Online and Offline courses available.
-
-</p>
-
-<!-- Call To Action -->
-
-<a href="#contact" class="btn">
-
-Start Learning Today
-
-</a>
-
-</div>
-
+<!-- HERO -->
+<section class="hero" id="home">
+    <h1>Սովորիր Անգլերեն Հեշտ և Արագ</h1>
+    <p>Օնլայն և օֆլայն դասընթացներ բոլոր մակարդակների համար</p>
+    <a href="#contact" class="btn">Գրանցվել հիմա</a>
 </section>
 
-<!-- =========================
-     ABOUT SECTION
-========================= -->
+<!-- COURSES -->
+<section id="courses">
+    <h2>Դասընթացներ</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Սկսնակ</h3>
+            <p>Անգլերենի հիմունքներ սկսնակների համար</p>
+        </div>
 
-<section class="about">
+        <div class="card">
+            <h3>Միջին</h3>
+            <p>Խոսակցական և քերականության զարգացում</p>
+        </div>
 
-<div class="container">
-
-<h2>
-
-About Our English Courses
-
-</h2>
-
-<p>
-
-Our English lessons are designed for learners of all levels —
-from beginners to advanced students.  
-We focus on speaking, grammar, vocabulary,
-and real-life communication skills
-to help you speak English confidently.
-
-</p>
-
-</div>
-
+        <div class="card">
+            <h3>Բարձր մակարդակ</h3>
+            <p>Ակադեմիական և պրոֆեսիոնալ անգլերեն</p>
+        </div>
+    </div>
 </section>
 
-<!-- =========================
-     FEATURES SECTION
-========================= -->
-
-<section class="features">
-
-<div class="container">
-
-<h2>
-
-Why Choose Our Courses
-
-</h2>
-
-<div class="grid">
-
-<!-- Feature 1 -->
-
-<div class="card">
-
-<h3>
-
-Experienced Teacher
-
-</h3>
-
-<p>
-
-Learn from a qualified English teacher
-with modern teaching methods.
-
-</p>
-
-</div>
-
-<!-- Feature 2 -->
-
-<div class="card">
-
-<h3>
-
-Interactive Lessons
-
-</h3>
-
-<p>
-
-Fun and engaging lessons
-that improve speaking skills.
-
-</p>
-
-</div>
-
-<!-- Feature 3 -->
-
-<div class="card">
-
-<h3>
-
-Flexible Schedule
-
-</h3>
-
-<p>
-
-Choose lesson times
-that fit your daily routine.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+<!-- HOW TO REGISTER -->
+<section id="how">
+    <h2>Ինչպես գրանցվել</h2>
+    <div class="steps">
+        <div class="step">1. Կապ հաստատիր մեզ հետ</div>
+        <div class="step">2. Ընտրիր քո մակարդակը</div>
+        <div class="step">3. Սկսիր դասերը</div>
+    </div>
 </section>
 
-<!-- =========================
-     CONTACT SECTION
-========================= -->
-
-<section id="contact" class="contact">
-
-<div class="container">
-
-<h2>
-
-Start Your English Journey Today
-
-</h2>
-
-<p>
-
-Contact us now to book your first lesson.
-
-📱 WhatsApp / Telegram: +374 77 157747
-
-</p>
-
-<a href="https://wa.me/37477157747" class="btn">
-
-Contact via WhatsApp
-
-</a>
-
-</div>
-
+<!-- ABOUT -->
+<section id="about">
+    <h2>Մեր մասին</h2>
+    <div class="about">
+        <p>
+            Մենք առաջարկում ենք պրոֆեսիոնալ անգլերենի դասընթացներ դպրոցականների և մեծահասակների համար։
+            Մեր նպատակն է օգնել քեզ վստահ խոսել և օգտագործել անգլերենը իրական կյանքում։
+        </p>
+    </div>
 </section>
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Կապ</h2>
+    <div class="contact">
+        <p>Email: example@mail.com</p>
+        <p>Հեռախոս: +374 00 000000</p>
+        <a href="#" class="btn">Գրել մեզ</a>
+    </div>
+</section>
 
+<!-- FOOTER -->
 <footer>
-
-© 2026 English Courses  
-All Rights Reserved
-
+    <p>© 2026 English Academy | Բոլոր իրավունքները պաշտպանված են</p>
 </footer>
 
 </body>
-
 </html>
