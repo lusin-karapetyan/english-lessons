@@ -182,6 +182,24 @@
 }
     </style>
 </head>
+    <script>
+const translations = {
+    en: {
+        title: "English Lessons"
+    },
+    hy: {
+        title: "Անգլերենի Դասընթացներ"
+    },
+    ru: {
+        title: "Курсы Английского Языка"
+    }
+};
+
+function changeLanguage(lang) {
+    document.getElementById("title").innerText =
+        translations[lang].title;
+}
+</script>
 <body>
 
 <!-- NAVBAR -->
