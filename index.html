@@ -52,7 +52,7 @@
         }
 
         /* HERO */
-       <img src="https://cdn.shopify.com/s/files/1/0732/1246/1254/files/hero-banner.jpg?v=1780129104" alt=""></p>
+    
         .hero {
   background: url('NEW-WEBSITE-FEATURED-IMG-415X220-19.jpg') center/cover no-repeat;
 }
@@ -162,6 +162,24 @@
                 font-size: 28px;
             }
         }
+   .language-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.language-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #4a6cf7;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.language-buttons button:hover {
+    background: #3554d1;
+}
     </style>
 </head>
 <body>
@@ -169,6 +187,7 @@
 <!-- NAVBAR -->
 <header>
     <h3>English Academy</h3>
+
     <nav>
         <a href="#home">Գլխավոր</a>
         <a href="#courses">Դասընթացներ</a>
@@ -176,12 +195,17 @@
         <a href="#about">Մեր մասին</a>
         <a href="#contact">Կապ</a>
     </nav>
-</header>
 
+    <div class="language-buttons">
+        <button onclick="changeLanguage('hy')">🇦🇲 HY</button>
+        <button onclick="changeLanguage('en')">🇬🇧 EN</button>
+        <button onclick="changeLanguage('ru')">🇷🇺 RU</button>
+    </div>
+</header>
 <!-- HERO -->
 <section class="hero" id="home">
-    <h1>Սովորիր Անգլերեն Հեշտ և Արագ</h1>
-    <p>Օնլայն և օֆլայն դասընթացներ բոլոր մակարդակների համար</p>
+   <h1 id="hero-title">Սովորիր Անգլերեն Հեշտ և Արագ</h1>
+<p id="hero-text">Օնլայն և օֆլայն դասընթացներ բոլոր մակարդակների համար</p>
     <a href="#contact" class="btn">Գրանցվել հիմա</a>
 </section>
 
