@@ -15,7 +15,43 @@
             padding: 0;
             box-sizing: border-box;
         }
+<script>
+function changeLanguage(lang) {
 
+    if (lang === "hy") {
+        document.getElementById("hero-title").innerText =
+            "Սովորիր Անգլերեն Հեշտ և Արագ";
+
+        document.getElementById("hero-text").innerText =
+            "Օնլայն և օֆլայն դասընթացներ բոլոր մակարդակների համար";
+
+        document.getElementById("hero-btn").innerText =
+            "Գրանցվել հիմա";
+    }
+
+    if (lang === "en") {
+        document.getElementById("hero-title").innerText =
+            "Learn English Easily and Quickly";
+
+        document.getElementById("hero-text").innerText =
+            "Online and offline courses for all levels";
+
+        document.getElementById("hero-btn").innerText =
+            "Register Now";
+    }
+
+    if (lang === "ru") {
+        document.getElementById("hero-title").innerText =
+            "Изучайте Английский Легко и Быстро";
+
+        document.getElementById("hero-text").innerText =
+            "Онлайн и офлайн курсы для всех уровней";
+
+        document.getElementById("hero-btn").innerText =
+            "Записаться";
+    }
+}
+</script>
         body {
             <img
   src="https://cdn.shopify.com/s/files/1/0732/1246/1254/files/hero-banner.jpg?v=1780129104"
